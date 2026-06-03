@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>teste de html/</title>
+</head>
+<body>
+    
+<h1 id="texto"></h1>
+
+<script>
+
+let louco = "meu nome é louco"
+
+document.getElementById("texto").innerText = louco
+
+</script>
+
+<button id="btn">aperte</button>
+
+<script>
+
+let button = document.getElementById("btn")
+document.getElementById("btn").innerText = "aperte aqui"
+document.getElementById("btn").style.backgroundColor = "green"
+button.onclick = function() {
+
+    document.getElementById("texto").innerText = "gustavo eh gordo"
+    
+
+}
+
+</script>
+
+<h1 id="texto2"></h1>
+<p id="paragrafo"> julio eh lindo</p>
+<p id="paragrafo1">gustavo vai casar dps de bernado </p>
+
+
+<script>
+
+
+let date = new Date(2026, 12, 25)
+console.log(date)
+document.getElementById("texto2").innerText =
+date.toLocaleDateString()
+document.getElementById("paragrafo").innerText = "julio barbosa"
+document.getElementById("paragrafo").style.color = "red"
+document.getElementById("paragrafo1").innerText = "gustavo vai casar dps de bernado"
+document.getElementById("paragrafo1").style.color = "blue"
+</script>
+
+</body>
+</html>
+
